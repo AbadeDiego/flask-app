@@ -9,6 +9,7 @@ Simple flask application that will return a simple HTML page
 - docker images
 
 - docker run -p 5000:5000 --name my-flask docker-flask:v1.0.0
+- docker run -p 5000:5000 docker-flask:v1.0.0
 
 - curl 127.0.0.1:5000
 
