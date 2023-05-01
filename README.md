@@ -2,24 +2,26 @@
 Simple flask application that will return a simple HTML page
 
 # command lines
--docker build -t docker-flask:v1.0.0 .
+- sudo yum update
+- pip install --upgrade pip
+- docker build -t docker-flask:v1.0.0 .
 
--docker images
+- docker images
 
--docker run -p 5000:5000 --name my-flask docker-flask:v1.0.0
+- docker run -p 5000:5000 --name my-flask docker-flask:v1.0.0
 
--curl 127.0.0.1:5000
+- curl 127.0.0.1:5000
 
--df -hT
+- df -hT
 
 **Modify instance volume to 30GB**
 
--lsblk
+- lsblk
 
--sudo growpart /dev/xvda 1
+- sudo growpart /dev/xvda 1
 
--lsblk
+- lsblk
 
--sudo xfs_growfs -d /
+- sudo xfs_growfs -d /
 
--df -hT
+- df -hT
