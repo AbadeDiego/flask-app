@@ -1,0 +1,744 @@
+/*
+*
+* ==========================================
+* Page layout
+* ==========================================
+*
+*/
+
+
+.navbar-custom {
+	position: relative;
+	width: 1440px;
+	height: 116px;
+	left: 0px;
+	background: #091441;
+	box-shadow: 7px 0px 14px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+	color: whitesmoke;
+}
+
+.navbar-custom .navbar-header .navbar-menu{
+	position: absolute;
+	width: 112px;
+	height: 20px;
+	left: 1210px;
+	top: 49px;
+	cursor: pointer;
+}
+
+.navbar-custom .navbar-collapse{
+	position: absolute;
+	width: 287px;
+	height: 1024px;
+	right: 0px;
+	top: 0px;
+
+	background: #ABD2FB;
+	box-shadow: 7px 0px 18px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar-custom .navbar-collapse .menu a{
+	position: absolute;
+	height: 18px;
+	left: 25px;
+	top: 64px;
+		
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.25px;
+	
+	color: #091441;
+}
+
+.navbar-custom .navbar-collapse .menu img{
+	margin-right: 10px;
+}
+
+
+.navbar-custom .navbar-collapse .painel{
+	content: '';
+	position: absolute;
+	width: 287px;
+	height: 0px;
+	right: 0px;
+	top: 110px;
+
+	border: 1px solid #EAEAEA;
+}
+
+.navbar-custom .navbar-collapse .painel a{
+	position: absolute;
+	left: 30px;
+	top: 25px;
+	
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 22px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.25px;
+	
+	color: #091441;
+}
+
+.navbar-custom .navbar-collapse .imagens{
+	content: '';
+	position: absolute;
+	width: 287px;
+	height: 0px;
+	right: 0px;
+	top: 182px;
+
+	border: 1px solid #EAEAEA;
+}
+
+.navbar-custom .navbar-collapse .imagens a{
+	position: absolute;
+	left: 30px;
+	top: 25px;
+	
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 22px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.25px;
+	
+	color: #091441;
+}
+
+.navbar-custom .navbar-collapse .ocorrencia{
+	content: '';
+	position: absolute;
+	width: 287px;
+	height: 0px;
+	right: 0px;
+	top: 254px;
+
+	border: 1px solid #EAEAEA;
+	
+}
+
+.navbar-custom .navbar-collapse .ocorrencia a{
+	position: absolute;
+	left: 30px;
+	top: 25px;
+	
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 22px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.25px;
+	
+	color: #091441;
+}
+
+.navbar-custom .navbar-collapse .camera{
+	content: '';
+	position: absolute;
+	width: 287px;
+	height: 0px;
+	right: 0px;
+	top: 326px;
+
+	border: 1px solid #EAEAEA;
+	
+}
+
+.navbar-custom .navbar-collapse .camera a{
+	position: absolute;
+	left: 30px;
+	top: 30px;
+	
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 22px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.25px;
+	
+	color: #091441;
+}
+
+.navbar-custom .navbar-collapse .camera a:after {
+	content: '';
+	position: absolute;
+	left: -30px;
+	right: 0px;
+	width: 287px;
+	top: 52px;
+
+	border: 1px solid #EAEAEA;
+  }
+
+.navbar-custom .navbar-header .navbar-logo{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 3px 10px;
+	gap: 12px;
+	
+	position: absolute;
+	width: 120px;
+	height: 55px;
+	left: 74px;
+	top: 35px;
+	
+	border-radius: 8px;
+}
+
+
+body, html{
+	position: relative;
+	width: 1440px;
+	height: 1024px;
+  	background: linear-gradient(0deg, rgba(171, 210, 251, 0.18), rgba(171, 210, 251, 0.18)),
+	linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}
+
+/*005239
+*3c5077
+* ==========================================
+* Page index
+* ==========================================
+*
+*/
+
+.form-horizontal {
+	margin-top: 3.5rem;
+	margin-left: 35%;
+	font-size: 1.00rem;
+	font-weight: bold;
+  }
+
+  
+  .form-horizontal .form-button{
+	margin-left: 15%;
+	width: 150.38px;
+	height: 48px;
+	
+	font-weight: bold;
+	background-color:#091441;
+	border: none;
+	color: white;
+	padding: 12px 16px;
+	font-size: 16px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 5px;
+  
+}
+
+.form-horizontal .form-button:hover {
+	color: #ABD2FB;
+  }
+
+
+/*
+*
+* ==========================================
+* Page services
+* ==========================================
+*
+*/
+
+.popup{ 
+	width: 450px;
+	background: white;
+	border-radius: 6px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	padding: 0 20px 20px;
+	color: #333;
+}
+
+.popup img{
+	width: 100px;
+	margin-top: -50px;
+	border-radius: 50%;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2{
+	font-size: 38px;
+	font-weight: 700;
+	margin: 20px 0 10px;
+}
+
+.popup .btn{
+	width: 60%;
+	margin-top: 5px;
+	padding: 10px 0;
+	background: #ff2727;
+	color:#fff;
+	border: 0;
+	outline: none;
+	font-size: 18px;
+	border-radius: 4px;
+	cursor: pointer;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/*
+*
+* ==========================================
+* Page services
+* ==========================================
+*
+*/
+
+
+.our-services .text-area h2{
+	position: absolute;
+	height: 34px;
+	left: 580px;
+	top: 165px;
+
+	font-style: normal;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 34px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.25px;
+	text-transform: uppercase;
+	color: #091441;
+}
+
+.our-services .text-area h2:after {
+	content: '';
+	position: absolute;
+	width: 143px;
+	height: 3px;
+	left: 55px;
+	top: 40px;
+	background: #ABD2FB;
+  }
+
+  .our-services .card-group .card1 {
+	position: absolute;
+	width: 402px;
+	height: 429px;
+	left: 288px;
+	top: 249px;
+	
+	background: #FFFFFF;
+	border-radius: 20px;
+  }
+
+  .our-services .card-group .card2 {
+	position: absolute;
+	width: 402px;
+	height: 429px;
+	left: 750px;
+	top: 249px;
+	
+	background: #FFFFFF;
+	border-radius: 20px;
+  }
+
+  .our-services .card-group .card1 .card-img-top{
+	position: absolute;
+	width: 402px;
+	height: 252px;
+	background: url("/static/images/camera.png");
+	transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
+  .our-services .card-group .card2 .card-img-top{
+	position: absolute;
+	width: 402px;
+	height: 252px;
+	background: url("/static/images/information.png");
+	transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
+
+
+  .our-services .card-group .card1 h5,
+  .our-services .card-group .card2 h5
+  {
+	position: absolute;
+	height: 24px;
+	left: 140px;
+	top: 276px;
+	
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.25px;
+	text-transform: uppercase;
+	
+	color: #091441;
+  }
+
+  .our-services .card-group .card1 p,
+  .our-services .card-group .card2 p{
+	position: absolute;
+	width: 333px;
+	height: 20px;
+	left: 35px;
+	top: 307px;
+
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	letter-spacing: 0.25px;
+	color: #091441;
+  }
+  
+  .our-services .card-group .card1 .card-body a,
+  .our-services .card-group .card2 .card-body a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 11px 10px;
+	padding-left: 20px;
+	gap: 10x;
+	
+	position: absolute;
+	width: 333px;
+	height: 50px;
+	top: 362px;
+	left: 35px;
+	
+	background: #091441;
+	border-radius: 5px;
+	letter-spacing: 0.25px;
+
+  }
+/*
+*
+* ==========================================
+* Page detection
+* ==========================================
+*
+*/
+
+  .images-board{
+	display: block;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 900px;
+	margin-top: 6rem;
+	margin-left: 20%;
+  }
+
+  .our-services .images-board img{
+	filter: drop-shadow(0px 8px 29px rgba(0, 0, 0, 0.1));
+    border-radius: 5px;
+	width: 278px;
+	margin-top: 0.25rem;
+  }
+
+  .our-services .buttons .btn-back {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 11px 23px;
+	gap: 10px;
+	
+	position: absolute;
+	width: 130.38px;
+	height: 50px;
+	left: 830px;
+	margin-top: 34px;
+	cursor: pointer;
+
+	color: white;
+	background: #091441;
+	border-radius: 5px;
+	border-color: #091441;
+  }
+  
+  .our-services .buttons .btn-back:hover {
+	color:#ABD2FB;
+  }
+
+  .our-services .buttons .btn .delete {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 11px 28px;
+	gap: 10px;
+	
+	position: absolute;
+	width: 150.38px;
+	height: 48px;
+	left: 980px;
+	margin-top: 20px;
+	cursor: pointer;
+	
+	color:#091441;
+	background: #ABD2FB;
+	border-radius: 5px;
+	border-color: #ABD2FB;
+  }
+
+  .our-services .buttons .btn .delete:hover {
+	color: black;
+  }
+
+  .our-services .card-group .board {
+	position: absolute;
+	width: 852px;
+	height: 177px;
+	left: 294px;
+	top: 249px;
+
+	border-radius: 20px;
+	background: rgba(118, 146, 255, 0.36);
+	box-shadow: 0px 8px 29px rgba(0, 0, 0, 0.1);
+  }
+
+  .our-services .card-group .board .body img{
+	position: absolute;
+	width: 10%;
+	left: 45.78%;
+	right: 46.88%;
+	top: 25.44%;
+	bottom: 65.82%;
+  }
+
+
+  .our-services .card-group .board .body h4{
+	position: absolute;
+	width: 375px;
+	height: 23px;
+	left: 320px;
+	top: 140px;
+
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.25px;
+	color: #091441;
+  }
+
+  .our-services .buttons .btn-2-back {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 11px 23px;
+	gap: 10px;
+	
+	position: absolute;
+	width: 130.38px;
+	height: 50px;
+	left: 950px;
+	top: 450px;
+	cursor: pointer;
+
+	color: white;
+	background: #091441;
+	border-radius: 5px;
+	border-color: #091441;
+  }
+  
+  .our-services .buttons .btn-2-back:hover {
+	color:#ABD2FB;
+  }
+
+  
+/*
+*
+* ==========================================
+* Page warning
+* ==========================================
+*
+*/
+
+  .warning .text h2{
+	position: absolute;
+	height: 34px;
+	left: 450px;
+	right: 450px;
+	top: 165px;
+
+	font-style: normal;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 34px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.25px;
+	text-transform: uppercase;
+
+	color: #091441;
+  }
+
+  .warning .text h2:after {
+	content: '';
+	position: absolute;
+	width: 143px;
+	height: 3px;
+	left: 180px;
+	top: 40px;
+	background: #ABD2FB;
+  }
+
+  .warning .card-group .board {
+	position: absolute;
+	width: 852px;
+	height: 177px;
+	left: 294px;
+	top: 249px;
+
+	border-radius: 20px;
+	background: rgba(118, 146, 255, 0.36);
+	box-shadow: 0px 8px 29px rgba(0, 0, 0, 0.1);
+  }
+
+  .warning .card-group .board .body img{
+	position: absolute;
+	left: 47.78%;
+	right: 46.88%;
+	top: 27.44%;
+	bottom: 65.82%;
+  }
+
+
+  .warning .card-group .board .body h4{
+	position: absolute;
+	width: 375px;
+	height: 23px;
+	left: 320px;
+	top: 140px;
+
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.25px;
+	color: #091441;
+  }
+
+  .warning .card-group .board .body h3{
+	position: absolute;
+	width: 375px;
+	height: 80px;
+	left: calc(50% - 375px/2 - 182.5px);
+	top: 50px;
+
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.25px;
+
+	color: #091441;
+  }
+
+  .warning .buttons .btn-location{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 11px 23px;
+	gap: 10px;
+	
+	position: absolute;
+	width: 130.38px;
+	height: 50px;
+	left: 950px;
+	top: 300px;
+	
+	color: white;
+	background: #091441;
+	border-radius: 5px;
+  }
+
+  .warning .card-group .buttons .btn-back {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 11px 23px;
+	gap: 10px;
+	
+	position: absolute;
+	width: 130.38px;
+	height: 50px;
+	left: 850px;
+	top: 450px;
+	cursor: pointer;
+
+	color: white;
+	background: #091441;
+	border-radius: 5px;
+	border-color: #091441;
+  }
+  
+  .warning .card-group .buttons .btn-back:hover {
+	color:#ABD2FB;
+  }
+
+  .warning .card-group .buttons .btn .delete {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 11px 28px;
+	gap: 10px;
+	
+	position: absolute;
+	width: 150.38px;
+	height: 48px;
+	left: 1000px;
+	top: 450px;
+	cursor: pointer;
+	
+	color:#091441;
+	background: #ABD2FB;
+	border-radius: 5px;
+	border-color: #ABD2FB;
+  }
+
+  .warning .card-group .buttons .btn .delete:hover {
+	color: black;
+  }
+
+
+

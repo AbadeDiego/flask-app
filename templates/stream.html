@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+{% block ourpage %}
+
+<section class="information">
+
+  <div class="our-services">
+    <div class="text-area">
+        <h2>Quadro de controle</h2>
+    </div>
+  </div>
+  
+     {% if camera.stream%2 == 1 %}
+      <div class="images-board">
+        <div class="buttons">
+          <a href="{{ url_for('services') }}" class="btn"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Voltar</a>
+          <form class="btn" action="{{ url_for("stream")}}" method="post">
+              <button class="form" type="submit" class="btn btn-dark"><i class="fa fa-trash"></i> Iniciar detecções</button>
+          </form> 
+        </div>
+      </div><br><br>
+      
+      <div class="popup" style="background: #d9c6ff; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);"><br>
+        <h5 style="font-weight: 600;"> A camera IP salva tem host: {{camera.port}} e port: {{camera.port}}.</p><h5>
+      </div>
+
+     {% else %}
+
+     
+     <div class="images-board">
+       <div class="buttons">
+          <a href="{{ url_for('services') }}" class="btn"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Voltar</a>
+          <!--
+          <form class="btn" action="{{ url_for("stream")}}" method="post">
+              <button class="form" type="submit" class="btn btn-dark"><i class="fa fa-trash"></i> Pause detecções</button>
+          </form> -->
+       </div>
+     </div><br>
+
+     <div class="popup" style="background: #d9c6ff; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);"><br>
+      <h5 style="font-weight: 600;"> A camera IP conectada tem host: {{camera.port}} e port: {{camera.port}}.</p><h5>
+    </div>
+
+    <img src="{{ url_for('video_feed') }}" width="40%"> 
+
+
+   {% endif %} 
+
+</section>
+
+{% endblock %}
+

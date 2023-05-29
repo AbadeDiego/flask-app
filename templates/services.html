@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+{% block ourpage %}
+
+<section class="our-services">
+
+  {% if camera.alert==1  %}
+
+    <div class="popup">
+      <img src="/static/images/alert.png">
+      <h2>Aviso!</h2>
+      <p>Detectamos o uso de arma de fogo.</p>
+      <form action="{{ url_for("services")}}" method="post">
+        <button class="btn" type="submit">Ok</button>
+    </form> 
+    </div>
+
+    {% else %}
+  
+    <div class="text-area">
+      <h2>PAINEL PRINCIPAL</h2>
+    </div>
+    
+    <div class="card-group">
+
+        <div class="card1">
+          <div class="card-img-top"></div>
+          <div class="card-body">
+            <h5>IMAGENS</h5>
+            <p>Veja imagens dos suspeitos.</p>
+            <a href="{{ url_for('detection') }}" class="btn btn-primary">Ver imagens</a>
+          </div>
+        </div>
+
+        <div class="card2">
+          <div class="card-img-top"></div>
+          <div class="card-body">
+            <h5>INFORMAÇÕES</h5>
+            <p>Acesse informações da ocorrência.</p>
+            <center></center>
+            <a href="{{ url_for('warning') }}" class="btn btn-primary">Acessar ocorrência</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    {% endif %} 
+
+{% endblock %}

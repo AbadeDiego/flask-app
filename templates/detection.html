@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+{% block ourpage %}
+
+<section class="our-services">
+
+    <div class="text-area">
+        <h2>IMAGENS DETECTADAS</h2>
+    </div>
+
+
+    <div class="images-board"> <br>
+        {% if hists!=None  %}
+
+        {% for hist in hists %}
+            <img  src="{{hist}}" alt="{{hist}}">
+        {% endfor %}
+
+        <div class="buttons">
+            <a href="{{ url_for('services') }}" class="btn-back"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Voltar</a>
+            <form onsubmit="deleted()" class="btn"  method="post"> 
+                <button class="delete" type="submit" class="btn btn-dark"><i class="fa fa-trash"></i> Deletar</button>
+            </form> 
+        </div>
+    </div>
+
+
+        {% else %}
+
+        <div class="card-group">
+            <div class="board">
+              <div class="body">
+                <img src="/static/images/vector.png" alt="Vector">
+                <br><h4>Nenhuma imagem detectada</h4>
+              </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <a href="{{ url_for('services') }}" class="btn-2-back"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Voltar</a>
+        </div>
+      
+        {% endif %} 
+    
+              
+    <script src="static\script\showAlert.js"></script>
+
+
+</section>
+
+
+{% endblock %}

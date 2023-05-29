@@ -1,11 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Docker Flask App</title>
-</head>
-<body>
-    <h1>Hello World!</h1>
-    <h2>Welcome to the S3 CLOUDHUB</h2>
-</body>
-</html>
+{% extends 'layout.html' %}
+{% block ourpage %}
+
+<form  class="form-horizontal" id="camera_form" onsubmit="required()" action="{{ url_for("index")}}" method="post"> 
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="company">Empresa</label>
+    <div class="col-sm-5">
+      <input class="form-control" placeholder="Ex: Mineradora GTD" name="company" id="company" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="address">Local da câmera</label>
+    <div class="col-sm-5">
+      <input class="form-control" placeholder="Ex: Distrito N4" name="address" id="address" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="host">Câmera host</label>
+    <div class="col-sm-5">
+      <input class="form-control" placeholder="Ex: 8.8.8.8:554" name="host" id="host" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="port">Câmera port</label>
+    <div class="col-sm-5">
+      <input class="form-control" placeholder="Ex: 9784" name="port" id="port" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="user">Câmera user</label>
+    <div class="col-sm-5">
+      <input class="form-control" placeholder="Ex: admin" name="user" id="user" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="password">Câmera senha</label>
+    <div class="col-sm-5">
+      <input class="form-control" placeholder="Ex: pass" name="password" id="password" type="password" required>
+    </div>
+  </div>
+
+    <div class="col-sm-offset-2 col-sm-10">
+      <button  id="submit" type="submit" class="form-button"><i class="fa fa-save"></i> Salvar</button><br>
+    </div>
+</form> 
+<br><br>
+
+     
+<script src="static\script\showAlert.js"></script>  
+{% endblock %}

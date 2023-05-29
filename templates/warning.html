@@ -1,0 +1,53 @@
+{% extends 'layout.html' %}
+{% block ourpage %}
+
+<section class="warning">
+
+    <div class="text">
+        <h2>Informações sobre a detecção</h2>
+    </div>
+  
+    {% if camera.detection!=None  %}
+
+    <div class="card-group">
+        <div class="board">
+          <div class="body">
+            <h3>  
+              ENDEREÇO: {{camera.address}} <br />
+              ESTABELECIMENTO: Mercado Casa De Frios <br />
+              DATA: 28/03/2023 <br />
+              HORÁRIO: 17:20:14 <br />
+           </h3>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <a href="https://goo.gl/maps/K91yxY5WjaXzNpAp7" class="btn-location"><i class="fa fa-map-marker" aria-hidden="true"></i> Rotas</a>
+          <a href="{{ url_for('services') }}" class="btn-back"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Voltar</a>
+          <form class="btn" action="{{ url_for("warning")}}" method="post">
+              <button class="delete" type="submit" class="btn btn-dark"><i class="fa fa-trash"></i> Deletar</button>
+          </form> 
+       </div><br>
+    </div>
+
+    {% else %}
+
+  <div class="card-group">
+      <div class="board">
+        <div class="body">
+          <img src="/static/images/vector.png" alt="Vector">
+          <br><h4>Nenhuma ocorrência registrada</h4>
+        </div>
+      </div>
+  
+      <div class="buttons">
+        <a href="{{ url_for('services') }}" class="btn-back"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Voltar</a>
+     </div><br>
+  </div>
+
+    {% endif %} 
+
+</section>
+
+
+{% endblock %}
